@@ -1,0 +1,283 @@
+body, html{
+    margin: 0;
+    padding: 0;
+    font-family: "VT323", monospace;
+}
+
+
+header{
+    width: auto;
+    height: 150px;
+    background: linear-gradient(rgb(2, 5, 32), #010010);
+}
+
+h1{
+    text-align: center;
+    padding-top: 50px;
+    font-size: 70px;
+    color: #bea969;
+    font-weight: bold;
+    text-shadow: 
+    -4px -4px 10px #000000,  
+     4px -4px 10px #000000,
+    -4px  4px 10px #000000,
+     4px  4px 10px #000000;
+  /*para agregar borde a las letras*/
+}
+
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 650px;
+    background: url(imagenes/background\ zelda.jpeg);
+    background-repeat: no-repeat;
+    background-size: 100% 100%; /* Estirar horizontal y verticalmente para cubrir el contenedor */
+    position: relative;
+}
+
+
+.caja1{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+}
+
+.texto-encrip{
+    width: 600px;
+    height: 400px;
+    resize: none; /* Evita que el textarea sea redimensionable */
+    background: black;
+    opacity: 98%/* Transparencia del fondo */;
+    border: 10px solid rgb(2, 5, 32);
+    border-radius: 20px;
+    color: antiquewhite;
+    font-size: 36px;
+    font-family: 'VT323', monospace; /* Usa la fuente personalizada */
+    text-transform: lowercase;
+}
+
+
+.info{
+    text-align: center;
+    padding-bottom: 5px;
+    font-size: 25px;
+    color: #bea969;
+    font-weight: bold;
+    text-shadow: 
+    -4px -4px 10px #000000,  
+     4px -4px 10px #000000,
+    -4px  4px 10px #000000,
+     4px  4px 10px #000000;
+}
+
+.btns-caja1{
+    position: absolute;
+    bottom: 30px;
+}
+
+.btn-encriptar, .btn-desencriptar{
+    width: 200px;
+    height: 60px;
+    margin-left: 25px;
+    color: antiquewhite;
+    font-size: 30px;
+    background: black;
+    opacity: 98%/* Transparencia del fondo */;
+    border: 5px solid rgb(2, 5, 32);
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    cursor: pointer;
+    box-shadow: 6PX 6PX #000000;
+    transition: 1s;
+}
+
+
+.caja2{
+    display: flex;
+    justify-content: center;
+    width: 50%;
+    height: 458px;
+}
+
+.mensaje{
+    width: 600px;
+    height: 400px;
+    margin-bottom: 10px;
+    resize: none; /* Evita que el textarea sea redimensionable */
+    background: black;
+    opacity: 98%;
+    border: 10px solid rgb(2, 5, 32);
+    border-radius: 20px;
+    color: antiquewhite;
+    font-size: 36px;
+    font-family: 'VT323', monospace; /* Usa la fuente personalizada */
+    user-select: text;
+    text-transform: lowercase;
+}
+
+.btn-caja2{
+    position: absolute;
+    bottom: 30px;
+}
+
+.btn-copiar{
+    width: 200px;
+    height: 60px;
+    color: antiquewhite;
+    font-size: 30px;
+    background: black;
+    opacity: 98%/* Transparencia del fondo */;
+    border: 5px solid rgb(2, 5, 32);
+    border-radius: 5px;
+    font-family: 'VT323', monospace;
+    box-shadow: 6PX 6PX #000000;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.btn-encriptar:hover,.btn-desencriptar:hover, .btn-copiar:hover{
+    background: #5a4d21;
+    transform: scale(1.2);
+}
+
+footer{
+    position: relative;
+    width: 100%;
+    height: 26vh;
+    background: linear-gradient(#010010, rgb(2, 5, 32));
+    background-size: cover;
+}
+
+.copyright {
+    text-align: center;
+    color: antiquewhite;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    text-shadow: 
+    -4px -4px 10px #000000,  
+     4px -4px 10px #000000,
+    -4px  4px 10px #000000,
+     4px  4px 10px #000000;
+}
+
+.texto-encrip, .mensaje, .btn-encriptar, .btn-desencriptar, .btn-copiar:focus {
+    outline: none;
+}
+
+
+@media only screen and (max-width: 600px) {
+    h1 {
+        font-size: 30px;
+    }
+
+    main{
+        align-content: center;
+        justify-content: space-around;
+        flex-direction: column;
+    }
+
+    .caja1{
+        display: flex;
+        width: auto;
+        flex-direction: column;
+    }
+
+    .texto-encrip{
+        width: 300px;
+        height: 200px;
+        font-size: 25px;
+        opacity: 90%/* Transparencia del fondo */;
+    }
+
+    .info{
+        font-size: 15px;
+        color: #bea969;
+        padding-top: 6px;
+        padding-bottom: 6px;
+        margin-bottom: 4px;
+        background: black;
+        opacity: 98%/* Transparencia del fondo */;
+        border: 5px solid rgb(2, 5, 32);
+        border-radius: 20px ;
+        font-family: "VT323", monospace;
+    }
+
+    .btns-caja1{
+        position: static;
+        display: flex;
+        justify-content: center; /* Centra los elementos horizontalmente */
+        align-items: center; /* Centra los elementos verticalmente */
+        margin-right: 14px;
+    }
+
+    .btn-encriptar, .btn-desencriptar{
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+        margin-left: 12px; /* Ajusta los márgenes si es necesario */
+        padding: 0; /* Ajusta el padding si es necesario */
+        box-shadow: none;
+        transition: none;
+    }
+
+    .btn-encriptar:hover,
+    .btn-desencriptar:hover,
+    .btn-copiar:hover {
+        transform: initial;
+    }
+
+    .caja2{
+        display: flex;
+        width: auto;
+        height: 280px;
+        flex-direction: column;
+        position: relative;
+        top: -18px;
+    }
+
+    .mensaje{
+        width: 300px;
+        height: 400px;
+        font-size: 25px;
+        opacity: 90%/* Transparencia del fondo */;
+    }
+
+    .btn-caja2{
+        position: static;
+        text-align: center;
+    }
+
+    .btn-copiar{
+        width: 140px;
+        height: 50px;
+        font-size: 20px;
+        position: relative;
+        top: -8px;
+        box-shadow: none;
+        transition: none;
+    }
+
+    footer{
+        height: 100px;
+    }
+
+    .copyright {
+        text-align: center;
+        color: antiquewhite;
+        font-size: 15px;
+        bottom: 0;
+        width: 100%;
+        padding-bottom: 5px;
+        text-shadow: 
+        -4px -4px 10px #000000,  
+         4px -4px 10px #000000,
+        -4px  4px 10px #000000,
+         4px  4px 10px #000000;
+  }
+}

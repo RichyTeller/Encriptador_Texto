@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=VT323&display=swap" rel="stylesheet">
+    <title>Encriptador de texto</title>
+</head>
+<body>
+    <header class="contenedor-encabezado">
+        <div class="fondo-header">
+            <h1>&#9876; Guardián de los Algoritmos Antiguos &#9876;</h1>
+        </div>
+    </header>
+    
+    <main>
+        <section class="caja1">
+            <div class="contenedor-texto">
+                <textarea class="texto-encrip"></textarea>
+                <p class="info">&#10031; Solo letras minúsculas y sin acentos &#10031;</p>
+            </div>
+                <div class="btns-caja1">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Encriptar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Desencriptar</button>
+                </div>
+        </section>
+        <section class="caja2">
+            <textarea class="mensaje" readonly></textarea>
+            <div class="btn-caja2">
+                <button class="btn-copiar" onclick="copiar()">¡Copiar!</button>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p class="copyright">&copyCopyright Ricardo González - 2024</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
+<!-- Modificar estilos para pantallas moviles-->
